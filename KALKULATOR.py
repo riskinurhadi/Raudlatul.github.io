@@ -1,7 +1,26 @@
 print("SELAMAT DATANG DI INDOMARET TAMATIRT0 01")
+print("Berikut adalah barang yang sedang raedy di toko kami")
+
+from tabulate import tabulate
+
+data = [
+    ['Cabai', '/kg', 25],
+    ['Bawang merah', '/kg', 30],
+    ['kunyit', '/kg', 35]
+]
+
+headers = ['Name', 'Gender', 'Age']
+
+print(tabulate(data, headers))
+
+print("Demi keamanan bersama sebelum belanja...")
+print("mohon untuk mengisi absen pengunjung toko terlebih dahulu")
 
 # Meminta input nama pelanggan
 nama_pelanggan = input("Masukkan nama pelanggan: ")
+
+# Meminta input belanjaan
+nama_pelanggan = input("Masukkan barang yang di beli: ")
 
 # Meminta input jumlah barang yang dibeli
 jumlah_barang = int(input("Masukkan jumlah barang yang dibeli: "))
